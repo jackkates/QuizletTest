@@ -19,12 +19,14 @@ public class Utils {
             URL url = new URL(baseURL + query);
             URLConnection connection = url.openConnection();
             response = connection.getInputStream();
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }
         return response;
+    }
+
+    public static InputStream get(String url) {
+        return get(url, "");
     }
 
 }
