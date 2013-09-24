@@ -16,6 +16,7 @@ public class Quizlet {
     private String clientID;
     private Gson gson;
 
+
     public Quizlet(String clientID) {
         this.clientID = clientID;
         this.gson = new GsonBuilder()
@@ -23,6 +24,11 @@ public class Quizlet {
                 .create();
     }
 
+    /**
+     * Searches Quizlet for sets with the specified properties.
+     * @param query The query string
+     * @return SearchResult encapsulating the response
+     */
     public SearchResult search(String query) {
         SearchResult result = null;
         try {
@@ -36,6 +42,11 @@ public class Quizlet {
         return result;
     }
 
+    /**
+     * Fetches a quizlet set with the specified id.
+     * @param id The id of the set to fetch
+     * @return Set object that was fetched
+     */
     public Set getSet(int id) {
         InputStreamReader reader = get(baseSetURL + id, "");
         //Create Set from Json
@@ -43,6 +54,12 @@ public class Quizlet {
         return set;
     }
 
+    /**
+     * Helper method to perform the Utils.get() method.
+     * @param baseURL The base URL for the HTTP GET
+     * @param query Query String to attach to the baseURL
+     * @return QuizletResponse (InputStreamReader) from the operation
+     */
     private QuizletResponse get(String baseURL, String query) {
         String url = String.format("%s?client_id=%s&%s", baseURL, clientID, query);
         //Perform GET

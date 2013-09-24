@@ -9,6 +9,10 @@ import java.io.InputStreamReader;
  */
 class QuizletResponse extends InputStreamReader {
 
+    /**
+     * Constucts a QuizletResponse object with the specified stream
+     * @param inputStream
+     */
     QuizletResponse(InputStream inputStream) {
         super(inputStream);
     }

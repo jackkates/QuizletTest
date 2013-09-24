@@ -4,14 +4,15 @@ import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
 
+class Utils {
 
-public class Utils {
 
-    public static InputStream get(String baseURL, String query) {
-        return get(baseURL + query);
-    }
-
-    public static InputStream get(String urlString) {
+    /**
+     * Performs an HTTP GET request at the url.
+     * @param urlString
+     * @return Returns an InputStream containing the response from the request
+     */
+    protected static InputStream get(String urlString) {
         InputStream response = null;
         try {
             URL url = new URL(urlString);
