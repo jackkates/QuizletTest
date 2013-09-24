@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c610d8f4-c9c6-4808-8161-aa468eff70d6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quizlet/Quizlet.java" afterPath="$PROJECT_DIR$/src/quizlet/Quizlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quizlet/QuizletResponse.java" afterPath="$PROJECT_DIR$/src/quizlet/QuizletResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quizlet/SearchResult.java" afterPath="$PROJECT_DIR$/src/quizlet/SearchResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quizlet/Set.java" afterPath="$PROJECT_DIR$/src/quizlet/Set.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quizlet/Term.java" afterPath="$PROJECT_DIR$/src/quizlet/Term.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quizlet/Utils.java" afterPath="$PROJECT_DIR$/src/quizlet/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="QuizletTest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c610d8f4-c9c6-4808-8161-aa468eff70d6" time="1379983718125" ignored="false" />
+    <file path="/Dummy.txt" changelist="c610d8f4-c9c6-4808-8161-aa468eff70d6" time="1379986038912" ignored="false" />
     <file path="/Main.java" changelist="c610d8f4-c9c6-4808-8161-aa468eff70d6" time="1379983293401" ignored="false" />
     <file path="/fragment.java" changelist="c610d8f4-c9c6-4808-8161-aa468eff70d6" time="1379983644376" ignored="false" />
     <file path="/Data.java" changelist="c610d8f4-c9c6-4808-8161-aa468eff70d6" time="1379690329184" ignored="false" />
@@ -452,7 +445,11 @@
       <created>1379983720564</created>
       <updated>1379983720565</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added documentation">
+      <created>1379986042736</created>
+      <updated>1379986042736</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -523,7 +520,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored quizlet and utils; added QuizletResponse as 'alias' for inputstreamreader&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added documentation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -541,6 +538,7 @@
     <MESSAGE value="Added Utils class" />
     <MESSAGE value="Added quizlet class" />
     <MESSAGE value="Refactored quizlet and utils; added QuizletResponse as 'alias' for inputstreamreader&#10;" />
+    <MESSAGE value="Added documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
