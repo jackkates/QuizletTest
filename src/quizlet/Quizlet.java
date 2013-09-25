@@ -7,7 +7,10 @@ import com.google.gson.GsonBuilder;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-
+/**
+ * The main class for using Quizlet.
+ * @author Jack Kates
+ */
 public class Quizlet {
 
     private final static String baseSearchURL = "https://api.quizlet.com/2.0/search/sets";
@@ -16,7 +19,10 @@ public class Quizlet {
     private String clientID;
     private Gson gson;
 
-
+    /**
+     * Constructs a new Quizlet object.
+     * @param clientID The client ID to access Quizlet with.
+     */
     public Quizlet(String clientID) {
         this.clientID = clientID;
         this.gson = new GsonBuilder()
@@ -61,7 +67,7 @@ public class Quizlet {
      * @return QuizletResponse (InputStreamReader) from the operation
      */
     private QuizletResponse get(String baseURL, String query) {
-        String url = String.format("%s?client_id=%s&%s", baseURL, clientID, query);
+        String url = String.format("%s?client_id=%s%s", baseURL, clientID, query);
         //Perform GET
         InputStream stream = Utils.get(url);
         QuizletResponse response = new QuizletResponse(stream);

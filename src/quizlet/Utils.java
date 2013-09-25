@@ -12,7 +12,7 @@ class Utils {
      * @param urlString
      * @return Returns an InputStream containing the response from the request
      */
-    protected static InputStream get(String urlString) {
+    public static InputStream get(String urlString) {
         InputStream response = null;
         try {
             URL url = new URL(urlString);
